@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --primary-color:#E6533C;
+    --primary-font:"Playwrite NZ", cursive;
+}
+.title{
+    color:var(--primary-color);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+
+}
+nav{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1440px;
+    margin: auto;
+}
+.navlink{
+    color: white;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    /* font-family: "Playwrite NZ", cursive; */
+}
+.nav-container li:hover{
+    background-color: var(--primary-color);
+    border-radius: 20px ;
+    cursor: pointer;
+}
+.nav-container{
+    color: white;
+    display: flex;
+    
+}
+#hamburger{
+    color: white;
+    display: none;
+}
+.banner{
+    background-image: linear-gradient(#111 ,rgba(119, 119, 119, 0.3),#111);
+    height: 100vh;
+}
+.banner-container{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}.banner-title{
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+.main-description{
+    color: rgba(255, 255, 255, 0.50);
+}
+.main-Button{
+    padding:  10px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: #E6533C 1px solid;
+}
+.main-Button:hover{
+    background-color: transparent;
+    border: #E6533C 1px solid;
+}
+.secondary-button{
+    padding:  10px 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: #ffffff 1px solid;
+}
+.secondary-button:hover{
+    background-color: var(--primary-color);
+    border: #E6533C
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    padding: 15px 40px;
+}
+#right-glass{
+    position: absolute;
+    right: 0px;
+}
+#left-glass{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width :576px) {
+    #hamburger{
+        display: flex;
+    }
+    .nav-container{
+        display: none;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner{
+        height: auto;
+    }
+    
+}
+@media screen and (min-width : 570px) and (max-width : 990px) {
+    .navlink{
+        color: white;
+        list-style: none;
+        margin-left: 0px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 7px 15px;
+        /* font-family: "Playwrite NZ", cursive; */
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner{
+        height: auto;
+    }
+    
+}
